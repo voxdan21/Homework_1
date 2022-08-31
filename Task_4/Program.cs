@@ -32,18 +32,18 @@ else
  {
 // если дошли у нас положительные числа
  while (number_2 <= number_1)
- {
-  if (number_2 % 2 ==0)
   {
+  if (number_2 % 2 ==0)
+   {
 Result = Result +", " + number_2;               
 number_2++;
-  }
-else 
-{
+   }
+  else 
+   {
 number_2++;
-}
-}
-}
+   }
+  }
+ }
 }
 // удаляем первые символы, и выводим результат
 Console.WriteLine(Result.Remove(0,2));
