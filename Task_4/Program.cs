@@ -7,8 +7,8 @@ int number_2 = 1;
 // будем записывать в данную переменную результат
 string Result = "";
 
-//проверка на 0 
-if(number_1 ==0)
+//проверка на 0 и на 1 
+if(number_1 ==0 || number_1 == 1)
  {
     Result ="  нет четных чисел в промежутке";
  }
@@ -17,7 +17,7 @@ else
 // проверка на отрицательные числа    
  if(number_1<0)
  {
-  while(number_2 > number_1)
+  while(number_2 >= number_1)
   {
     if (number_1 % 2 ==0)
     {
@@ -31,7 +31,7 @@ else
  else
  {
 // если дошли у нас положительные числа
- while (number_2 < number_1)
+ while (number_2 <= number_1)
  {
   if (number_2 % 2 ==0)
   {
